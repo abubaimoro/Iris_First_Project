@@ -1,0 +1,198 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    font-family: "Poppins", sans-serif;
+
+}
+
+#hero {
+    background-image: url(./img/hero_bg.jpg);
+    height: 100vh;
+    width: 100vw;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.overlay {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    background-color: rgb(0, 0, 0, 0.2);
+}
+
+#resort_name {
+    color: white;
+    font-size: 3rem;
+}
+
+#resort_description {
+    color: black;
+    font-size: 1.2rem;
+}
+
+#hero_button {
+    background-color: blue;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: none;
+}
+
+nav {
+    display: flex;
+    flex-direction: row; /* Changed to row to align items horizontally */
+    justify-content: space-between; /* Spreads out the h1 and nav items */
+    align-items: center;
+    background-color: black;
+    padding: 10px 50px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    box-sizing: border-box; /* Ensures padding is included in width */
+    z-index: 50;
+}
+
+nav h1 {
+    margin: 0; /* Removes default margin from h1 */
+}
+
+#nav_items {
+    display: flex;
+    flex-direction: row;
+    align-items: center; /* Vertically centers the nav items */
+    color: turquoise;
+}
+
+#nav_items > * {
+    margin: 0 10px; /* Adds space between nav items */
+}
+
+#nav_items a {
+    text-decoration: none;
+    color: inherit;
+}
+
+#nav_items a:hover {
+    text-decoration: none;
+    /* Add any hover styles you want */
+}
+
+#works {
+    margin: 5rem;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    row-gap: 80px;
+}
+
+#intro {
+    color: blue;
+}
+
+.header {
+    width: 60%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+
+.header h2 {
+    font-size: 2.5rem;
+}
+
+#gallery{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 100%;
+    gap: 50px;
+
+}
+.gallery_item {
+    width: 100%;
+    height: 500px;
+    position: relative;
+    overflow: hidden;
+
+}
+.gallery_item img {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+    border-radius: 10px;
+}
+
+.gallery_overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    background-color: rgb(0, 0, 0, 0.8);
+    opacity: 0.2;
+}
+
+.gallery_overlay:hover {
+    opacity: 1;
+}
+
+#features {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 3rem 0;
+    padding: 0 8rem;
+    column-gap: 3rem;
+}
+
+.feature_item{
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+
+
+.feature_title{
+    font-weight: bold;
+    color: aqua;
+}
+
+.image_strip {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+    color: white;
+    background-color: aqua;
+    padding: 1rem;
+    width: 100%;
+}
+
+.footer_zone {
+    background-color: #333333;
+    color: white;
+
+}
+
+.footer_items {
+    display: flex;
+    flex-direction: row;
+
+}
+
+
