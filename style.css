@@ -5,6 +5,7 @@
 * {
     margin: 0;
     padding: 0;
+    border: none;
     overflow-x: hidden;
     font-family: "Poppins", sans-serif;
 
@@ -37,7 +38,7 @@
 }
 
 #resort_description {
-    color: black;
+    color: white;
     font-size: 1.2rem;
 }
 
@@ -186,13 +187,13 @@ nav h1 {
 .footer_zone {
     background-color: #333333;
     color: white;
-
 }
 
-.footer_items {
-    display: flex;
-    flex-direction: row;
-
+.footer_bottom {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 10px;
+    padding: 2rem;
+    
 }
-
 
